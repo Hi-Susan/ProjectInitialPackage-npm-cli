@@ -11,16 +11,14 @@ export default [{
   input: {
     index: 'build/js/index.js'
   },
-  output : {
+banner  output : {
     banner: `/*!
-      * AdminLTE v${pkg.version} (${pkg.homepage})
-      * Copyright 2014-${year} ${pkg.author}
-      * Licensed under MIT (https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
+      * Project Name v${pkg.version} (${pkg.homepage})
+      * Copyright 2020-${year} ${pkg.author}
       */`,
     dir : 'dist/js/',
     format: 'umd',
     globals,
-    name: 'adminlte'
   },
   plugins: [
     babel({
@@ -31,13 +29,12 @@ export default [{
 },
 {
   input: {
-    indexCopy: 'build/js/index copy.js'
+    indexCopy: 'build/js/inde.js'
   },
   output : {
     banner: `/*!
-      * AdminLTE v${pkg.version} (${pkg.homepage})
-      * Copyright 2014-${year} ${pkg.author}
-      * Licensed under MIT (https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
+      * Project Name v${pkg.version} (${pkg.homepage})
+      * Copyright 2020-${year} ${pkg.author}
       */`,
     dir : 'dist/js/',
     format: 'umd',
