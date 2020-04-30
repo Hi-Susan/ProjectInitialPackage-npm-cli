@@ -44,7 +44,7 @@
     "@fortawesome/fontawesome-free": "^5.12.1",
     "datatables.net": "^1.10.20",
     "datatables.net-dt": "^1.10.20",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery.countdown": "^1.2.8",
     "normalize.css": "^8.0.1",
     "pug": "^2.0.4",
