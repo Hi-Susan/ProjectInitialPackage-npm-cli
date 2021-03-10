@@ -1,8 +1,10 @@
 {
-  "name": "gdraw-game-platform",
+  "name": "project_name",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "css": "npm-run-all --sequential css-compile css-prefix",
     "css-compile-bash": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --output-style expanded --source-map true --source-map-contents true --precision 6 ",
@@ -22,8 +24,6 @@
     "watch-js": "nodemon --watch build/js -e js -x \"npm run js\"",
     "test": "standard && node build/js/*.js"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/plugin-external-helpers": "^7.12.13",

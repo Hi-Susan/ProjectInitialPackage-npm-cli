@@ -11,35 +11,14 @@ export default [{
   input: {
     index: 'build/js/index.js'
   },
-banner  output : {
-    banner: `/*!
-      * Project Name v${pkg.version} (${pkg.homepage})
-      * Copyright 2020-${year} ${pkg.author}
-      */`,
-    dir : 'dist/js/',
-    format: 'umd',
-    globals,
-  },
-  plugins: [
-    babel({
-      exclude: 'node_modules/**',
-      externalHelpers: true
-    })
-  ]
-},
-{
-  input: {
-    indexCopy: 'build/js/inde.js'
-  },
   output : {
     banner: `/*!
-      * Project Name v${pkg.version} (${pkg.homepage})
+      * Project Name v${pkg.version}
       * Copyright 2020-${year} ${pkg.author}
       */`,
     dir : 'dist/js/',
-    format: 'umd',
+    format: 'esm',
     globals,
-    name: 'adminlte'
   },
   plugins: [
     babel({
